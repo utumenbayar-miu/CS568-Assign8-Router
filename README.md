@@ -1,6 +1,9 @@
-# CS568-Assign8-Router
+# CS568 - Assignment 8 - React Router
 
-Pull https://github.com/utumenbayar-miu/todo-list/tree/json. Implement React Router.
-- Create the "Home" route that lists todo items in the state.
-- Create the "AddTodo" route. It doesn't have to be functional for now. We will fix that in the next 2 days.
-- Create the "Details" route that displays item id which is a path parameter. Add details link to the todoItem component.
+/users -> List users.
+/users/add -> Hide the list of users and show the add user page.
+/users/:userId -> Show user details in the input tags and be able to edit.
+
+/courses -> List of courses. Keep the course object simple. Just name, code.
+/courses/add -> Add the course entered in the DB. There are 2 inputs name and code. This add and below detail routes are nested routes in the "courses" route. Use <Outlet>. The list of courses is not hidden. Show (Swap) the add and details back and forth when click on the link. 
+/courses/:courseId -> Course details. No need to have edit funcitonality here. Just show.
