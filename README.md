@@ -1,11 +1,10 @@
 # CS568 - Assignment 8 - React Router
+## React Router tutorial
+Implement the [React Router tutorial](https://reactrouter.com/en/main/start/tutorial). It will take only one hour to complete. Take a note and try to understand the concepts. 
 
+## Add routes (pages) to the sample Student app
 The users:
-- ```/users``` -> List users.
-- ```/users/add``` -> Hide the list of users and show the add user page.
-- ```/users/:userId``` -> Show user details in the input tags and be able to edit.
-
-The courses:
-- ```/courses``` -> List of courses. Keep the course object simple. Just name, code.
-- ```/courses/add``` -> Add the course entered in the DB. There are 2 inputs name and code. This add and below detail routes are nested routes in the "courses" route. Use ```<Outlet>```. The list of courses is not hidden. Show (Swap) the add and details back and forth when click on the link. 
-- ```/courses/:courseId``` -> Course details. No need to have edit funcitonality here. Just show.
+- `/students` -> It is the main page and will have a NavBar or group of Links to other pages. List students here. Should be able to delete from the list.
+- `/students/add` -> Show a form to add the student in `Outlet` in the main page.
+- `/students/edit` -> Show a form to edit the student in `Outlet` in the main page.
+- `/students/:studentId` -> Show student details in `Outlet` in the main page.
